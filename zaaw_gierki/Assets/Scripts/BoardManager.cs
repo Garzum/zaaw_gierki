@@ -26,7 +26,7 @@ namespace Assets.Scripts
 
         public int columns = 10;                                         //Number of columns in our game board.
         public int rows = 10;                                            //Number of rows in our game board.
-        public Count wallCount = new Count(5, 9);                       //Lower and upper limit for our random number of walls per level.
+     //   public Count wallCount = new Count(5, 9);                       //Lower and upper limit for our random number of walls per level.
       //  public Count foodCount = new Count(1, 5);                       //Lower and upper limit for our random number of food items per level.
         public GameObject exit;                                         //Prefab to spawn for exit.
         public GameObject[] floorTiles;                                 //Array of floor prefabs.
@@ -136,13 +136,13 @@ namespace Assets.Scripts
             InitialiseList();
 
             //Instantiate a random number of wall tiles based on minimum and maximum, at randomized positions.
-            LayoutObjectAtRandom(wallTiles, wallCount.minimum, wallCount.maximum);
+           // LayoutObjectAtRandom(wallTiles, wallCount.minimum, wallCount.maximum);
 
             //Instantiate a random number of food tiles based on minimum and maximum, at randomized positions.
           //  LayoutObjectAtRandom(foodTiles, foodCount.minimum, foodCount.maximum);
 
             //Determine number of enemies based on current level number, based on a logarithmic progression
-            int enemyCount = (int)Mathf.Log(level, 2f);
+           // int enemyCount = (int)Mathf.Log(level, 2f);
 
             //Instantiate a random number of enemies based on minimum and maximum, at randomized positions.
            // LayoutObjectAtRandom(enemyTiles, enemyCount, enemyCount);
